@@ -723,16 +723,16 @@ class ToggleButtons extends StatelessWidget {
       }
 
       Widget button = _SelectToggleButton(
-        leadingBorderSide: leadingBorderSide,
-        borderSide: borderSide,
-        trailingBorderSide: trailingBorderSide,
+        leadingBorderSide: BorderSide.none,
+        borderSide: BorderSide.none,
+        trailingBorderSide: BorderSide.none,
         borderRadius: edgeBorderRadius,
         isFirstButton: index == 0,
         isLastButton: index == children.length - 1,
         direction: direction,
         verticalDirection: verticalDirection,
         child: ClipRRect(
-          borderRadius: clipBorderRadius,
+          borderRadius: BorderRadius.circular(30),
           child: TextButton(
             focusNode: focusNodes != null ? focusNodes![index] : null,
             style: ButtonStyle(

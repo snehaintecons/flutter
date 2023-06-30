@@ -508,14 +508,14 @@ class ThemeData with Diagnosticable {
       primaryColorDark: primaryColorDark,
       accentColor: isDark ? Colors.tealAccent[200]! : primarySwatch[500]!,
       cardColor: cardColor,
-      backgroundColor: isDark ? Colors.grey[700]! : primarySwatch[200]!,
+      backgroundColor: isDark ? Colors.blue! : Colors.blue!,
       errorColor: Colors.red[700],
       brightness: effectiveBrightness,
     );
     selectedRowColor ??= Colors.grey[100]!;
     unselectedWidgetColor ??= isDark ? Colors.white70 : Colors.black54;
     // Spec doesn't specify a dark theme secondaryHeaderColor, this is a guess.
-    secondaryHeaderColor ??= isDark ? Colors.grey[700]! : primarySwatch[50]!;
+    secondaryHeaderColor ??= isDark ? Colors.blue! : Colors.blue!;
     dialogBackgroundColor ??= isDark ? Colors.grey[800]! : Colors.white;
     indicatorColor ??= colorScheme.secondary == primaryColor ? Colors.white : colorScheme.secondary;
     hintColor ??= isDark ? Colors.white60 : Colors.black.withOpacity(0.6);
