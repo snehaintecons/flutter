@@ -725,7 +725,7 @@ class ToggleButtons extends StatelessWidget {
       Widget button = _SelectToggleButton(
         leadingBorderSide: BorderSide.none,
         borderSide: BorderSide.none,
-        trailingBorderSide: trailingBorderSide,
+        trailingBorderSide: BorderSide.none,
         borderRadius: edgeBorderRadius,
         isFirstButton: index == 0,
         isLastButton: index == children.length - 1,
